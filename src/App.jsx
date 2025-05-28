@@ -1,21 +1,16 @@
-import { useState } from 'react'
-import { Routes, Route, Link } from "react-router-dom";
-import './css/index.css';
+import { useState } from "react";
+import { Routes, Route, Link, Router } from "react-router-dom";
+import "./css/index.css";
+import HomePage from "./pages/HomePage.jsx";
 
 function App() {
-
   return (
     <>
-    <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-      {/* <Link to="/">App</Link><br />
-
       <Routes>
-          <Route path="/" element={<App/>} />
-      </Routes> */}
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
